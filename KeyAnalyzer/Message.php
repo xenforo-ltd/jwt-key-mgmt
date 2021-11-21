@@ -86,6 +86,7 @@ class Message implements \JsonSerializable
         return $this->severity;
     }
 
+	#[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         return [
